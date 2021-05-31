@@ -1,0 +1,209 @@
+body {
+    // height: 1200px;
+    min-width: 320px;
+    max-width: 750px;
+    margin: 0 auto;
+    background-color: #F2F4F7;
+}
+@media  screen and (min-width: 750px) {
+    html {
+        font-size: 37.5px!important;
+    }
+}
+a {
+    text-decoration: none;
+    color: #707070;
+}
+.warp {
+    background-color: #fff;
+    padding-bottom: 1.146667rem;
+}
+// 头部
+.header {
+    height: 2.133333rem;
+    border-bottom: 1px solid #EAEAEA;
+    text-align: center;
+    line-height: 2.133333rem;
+    font-size: .933333rem;
+    color: #1C1C1C;
+}
+// nav部分
+.nav {
+    display: flex;
+    padding: 1.2rem 0 1.6rem 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    .item {
+        display: flex;
+        width: 33.3%;  
+        flex-direction: column;
+        align-items: center;
+        img {
+            width: 3.706667rem;
+            height: 3.706667rem;
+        }
+        span {
+            font-size: .666667rem;
+            color: #707070;
+        }
+        &:nth-child(n-3) {
+            margin-bottom: 1.653333rem;
+        }
+    } 
+}
+// go模块
+.go {
+    margin: 0 .266667rem 0 .48rem;
+    img {
+        width: 100%;
+    }
+}
+.content {
+    padding: 1.066667rem .64rem;
+    background-color: #fff;
+    margin-top: .266667rem; 
+    .content-hd {
+        display: flex;
+        height: 1.013333rem;
+        line-height: 1.013333rem;
+        // background-color: aqua;
+        justify-content: space-between;
+        margin-bottom: .906667rem;
+    }
+    h4 {
+        margin: 0;
+        font-size: .746667rem;
+        color: #333;
+        img {
+            width: 1.013333rem;
+            height: 1.013333rem;
+            vertical-align: middle;
+        }
+    }
+    .more {
+        font-size: .586667rem;
+        color: #999;
+    }
+}
+.get_job_focus{
+    position: relative;
+    .swiper-container {
+        height: 100%;
+        width: 14.4rem;
+      }
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        /* Center slide text vertically */
+        flex-direction: column;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        transition: 300ms;
+        transform: scale(0.8);
+        opacity: .6;
+        a {
+            width: 9.013333rem;
+            height: 10.026667rem;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        p {
+            width: 9.013333rem;
+            font-size: .666667rem;
+            margin-top: .64rem;
+            color: #333;
+        }
+      }
+ 
+      .swiper-slide-active,.swiper-slide-duplicate-active{
+        transform: scale(1);
+        z-index: 99;
+        opacity: 1;
+      }
+      .swiper-button-next,
+      .swiper-button-prev {
+          outline: none;
+          &::after {
+              font-size: 1.066667rem;
+              color: #333;
+          }
+      }
+}
+.study_con {
+    margin-bottom: 3.733333rem!important;
+}
+    // 学习模块轮播图
+    .study {
+        .study_fo {
+            padding: .266667rem;
+        }
+        .swiper-slide {
+            // text-align: center;
+            font-size: 18px;
+            background: #fff;
+            width: 7.733333rem;
+            height: 9.066667rem;
+            // background-color: aqua;
+            border-radius: .266667rem;
+            box-shadow: 0 0px 10px rgba(0,0,0,.1);
+            h5 {
+                font-size: .693333rem;
+                font-weight: normal;
+                margin: .533333rem 0;
+                padding: 0 .266667rem;
+            }
+            img {
+                width: 100%;
+                height: 4.56rem;
+            }
+            p {
+                font-size: .693333rem;
+                color: #FF4400;
+                padding: 0 .266667rem;
+            }
+          }
+    }
+    .footer {
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2.933333rem;
+        // background-color: aqua;
+        background-color: #fff;
+        z-index: 99999;
+        padding: .533333rem;
+        border: 1px solid #ccc;
+        .items {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex: 1;
+            img {
+                display: block;
+                width: 1.04rem;
+                height: 1.093333rem;
+            }
+            p {
+                padding: 0;
+                margin: 0;
+                margin-top: .266667rem;
+                font-size: .586667rem;
+            }
+        }
+    }
